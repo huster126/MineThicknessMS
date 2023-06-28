@@ -24,7 +24,7 @@ namespace MineralThicknessMS.config
                     {
 
                         conn.Open();
-                        if (para != null)
+                        if (para !=  null)
                         {
                             foreach (MySqlParameter p in para)
                             {
