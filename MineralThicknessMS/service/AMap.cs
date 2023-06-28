@@ -9,7 +9,7 @@ namespace MineralThicknessMS.service
         public AMapProviderBase()
         {
             MaxZoom = null;
-            RefererUrl = "http://www.amap.com/";  
+            RefererUrl = "http://www.amap.com/";
         }
 
         public override PureProjection Projection
