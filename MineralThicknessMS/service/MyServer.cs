@@ -21,8 +21,8 @@ namespace MineralThicknessMS.service
         private entity.Status status;
         public bool openFlag = false;
 
-
-        public MyServer(string port) {
+        public MyServer(string port)
+        {
             dataMapper = new DataMapper();
             msgDecode = new MsgDecode();
             Control.CheckForIllegalCrossThreadCalls = false;
