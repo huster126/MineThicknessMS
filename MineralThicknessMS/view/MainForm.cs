@@ -22,7 +22,7 @@ namespace MineralThicknessMS
 
         public MainForm()
         {
-            InitializeComponent();
+            InitializeComponent(); 
             myserver = new MyServer(txtPort.Text.ToString());
             instruction = new Instruction();
             msgDecode = new MsgDecode();
