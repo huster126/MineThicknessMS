@@ -8,7 +8,8 @@ namespace MineralThicknessMS.entity
 {
     public class DataMsg
     {
-        
+        private string msgBegin;
+        private string msgEnd;
 
         private int id;
         private DateTime dataTime;   //时间
@@ -36,6 +37,16 @@ namespace MineralThicknessMS.entity
         public double mineHigh;//矿厚
         private int waterwayId; //航道号
         private int rectangleId;//网格编号
+
+        public string getMsgBegin()
+        {
+            return this.msgBegin;
+        }
+
+        public void setMsgBegin(string msgBegin)
+        {
+            this.msgBegin = msgBegin;
+        }
 
         public void setMineHigh(double mineHigh)
         {
