@@ -790,6 +790,7 @@
             toolStripButton17.Name = "toolStripButton17";
             toolStripButton17.Size = new Size(34, 41);
             toolStripButton17.Text = "左侧加热启动";
+            toolStripButton17.Visible = false;
             toolStripButton17.Click += btnLHstart_Click;
             // 
             // toolStripButton18
@@ -800,6 +801,7 @@
             toolStripButton18.Name = "toolStripButton18";
             toolStripButton18.Size = new Size(34, 41);
             toolStripButton18.Text = "左侧加热关闭";
+            toolStripButton18.Visible = false;
             toolStripButton18.Click += btnLHstop_Click;
             // 
             // toolStripButton19
@@ -810,6 +812,7 @@
             toolStripButton19.Name = "toolStripButton19";
             toolStripButton19.Size = new Size(34, 41);
             toolStripButton19.Text = "右侧加热启动";
+            toolStripButton19.Visible = false;
             toolStripButton19.Click += btnRHstart_Click;
             // 
             // toolStripButton20
@@ -820,12 +823,14 @@
             toolStripButton20.Name = "toolStripButton20";
             toolStripButton20.Size = new Size(34, 41);
             toolStripButton20.Text = "右侧加热关闭";
+            toolStripButton20.Visible = false;
             toolStripButton20.Click += btnRHstop_Click;
             // 
             // toolStripSeparator12
             // 
             toolStripSeparator12.Name = "toolStripSeparator12";
             toolStripSeparator12.Size = new Size(6, 46);
+            toolStripSeparator12.Visible = false;
             // 
             // splitContainer1
             // 

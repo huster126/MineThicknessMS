@@ -8,6 +8,8 @@ namespace MineralThicknessMS.entity
 {
     public class DataMsg
     {
+        private int hh;
+
         private int id;
         private DateTime dataTime;   //时间
         private double latitude;     //纬度
