@@ -18,6 +18,7 @@ namespace MineralThicknessMS.service
             {
                 DataMsg data = new DataMsg();
                 string[] strArry = msg.Split(',');
+                data.setMsgBegin(strArry[0]);
                 data.setDataTime(ConvertIntDatetime(strArry[1]));
                 //
                 data.setLatitude(ConvertToLat(strArry[2]));
@@ -38,6 +39,7 @@ namespace MineralThicknessMS.service
                 data.setTemperature(StrConvertToDou(strArry[18]));
                 data.setDeviceState(StrConvertToInt(strArry[19]));
                 data.setClientId(StrConvertToInt(strArry[20].Substring(0, 1)));
+                data.setMsgEnd(strArry[20].Substring(1, 3));
 
                 PointLatLng point = new PointLatLng(data.getLatitude(), data.getLongitude());
                 Grid grid = gridView.pointInGrid(point, Status.grids);
