@@ -8,7 +8,7 @@ namespace MineralThicknessMS.entity
 {
     public class DataMsg
     {
-        
+        private int hh;
 
         private int id;
         private DateTime dataTime;   //时间
