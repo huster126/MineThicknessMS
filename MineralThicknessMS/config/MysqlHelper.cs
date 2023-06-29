@@ -22,7 +22,6 @@ namespace MineralThicknessMS.config
                 {
                     try
                     {
-
                         conn.Open();
                         if (para != null)
                         {
