@@ -6,13 +6,10 @@ namespace MineralThicknessMS.entity
     public class Status
     {
 
-        //左支架状态 true：展开 false：折叠
-        public static bool[] bracketL = new bool[2];
+        //支架状态 true：展开 false：折叠
+        public static bool[] bracket = new bool[2];
 
-        //右支架状态 true：下放 false：上升
-        public static bool[] bracketR = new bool[2];
-
-        //测声仪状态 true：测量状态 false：冲洗状态 由左支架状态决定
+        //测声仪状态 
         public static bool[] soundMachine = new bool[2];
 
         //纬度
@@ -53,35 +50,27 @@ namespace MineralThicknessMS.entity
                 int i = dataMsg.getDeviceState();
                 if (i == 0)
                 {
-                    bracketL[clientId] = false;
-                    bracketR[clientId] = false;
+                    bracket[clientId] = false;
+                    soundMachine[clientId] = false;
 
                 }
                 if (i == 1)
                 {
-                    bracketL[clientId] = false;
-                    bracketR[clientId] = true;
+                    bracket[clientId] = false;
+                    soundMachine[clientId] = true;
 
                 }
                 if (i == 2)
                 {
-                    bracketL[clientId] = true;
-                    bracketR[clientId] = false;
+                    bracket[clientId] = true;
+                    soundMachine[clientId] = false;
 
                 }
                 if (i == 3)
                 {
-                    bracketL[clientId] = true;
-                    bracketR[clientId] = true;
-
-                }
-                if (bracketL[clientId])
-                {
+                    bracket[clientId] = true;
                     soundMachine[clientId] = true;
-                }
-                else
-                {
-                    soundMachine[clientId] = false;
+
                 }
                 latitude[clientId] = dataMsg.getLatitude();
                 longitude[clientId] = dataMsg.getLongitude();

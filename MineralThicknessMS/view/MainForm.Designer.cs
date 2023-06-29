@@ -148,9 +148,6 @@
             groupBox21 = new GroupBox();
             radioButton21 = new RadioButton();
             radioButton22 = new RadioButton();
-            groupBox20 = new GroupBox();
-            radioButton19 = new RadioButton();
-            radioButton20 = new RadioButton();
             groupBox19 = new GroupBox();
             radioButton17 = new RadioButton();
             radioButton18 = new RadioButton();
@@ -165,9 +162,6 @@
             groupBox13 = new GroupBox();
             radioButton9 = new RadioButton();
             radioButton10 = new RadioButton();
-            groupBox14 = new GroupBox();
-            radioButton11 = new RadioButton();
-            radioButton12 = new RadioButton();
             groupBox15 = new GroupBox();
             radioButton13 = new RadioButton();
             radioButton14 = new RadioButton();
@@ -217,13 +211,11 @@
             groupBox22.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             groupBox21.SuspendLayout();
-            groupBox20.SuspendLayout();
             groupBox19.SuspendLayout();
             tabPage8.SuspendLayout();
             groupBox17.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             groupBox13.SuspendLayout();
-            groupBox14.SuspendLayout();
             groupBox15.SuspendLayout();
             groupBox18.SuspendLayout();
             groupBox16.SuspendLayout();
@@ -1222,7 +1214,6 @@
             tabPage7.AutoScroll = true;
             tabPage7.Controls.Add(groupBox22);
             tabPage7.Controls.Add(groupBox21);
-            tabPage7.Controls.Add(groupBox20);
             tabPage7.Controls.Add(groupBox19);
             tabPage7.Location = new Point(4, 42);
             tabPage7.Margin = new Padding(4);
@@ -1230,14 +1221,14 @@
             tabPage7.Padding = new Padding(4);
             tabPage7.Size = new Size(478, 557);
             tabPage7.TabIndex = 0;
-            tabPage7.Text = "水采机1";
+            tabPage7.Text = "设备1";
             tabPage7.UseVisualStyleBackColor = true;
             // 
             // groupBox22
             // 
             groupBox22.Controls.Add(tableLayoutPanel2);
             groupBox22.Dock = DockStyle.Top;
-            groupBox22.Location = new Point(4, 328);
+            groupBox22.Location = new Point(4, 220);
             groupBox22.Margin = new Padding(4);
             groupBox22.Name = "groupBox22";
             groupBox22.Padding = new Padding(4);
@@ -1329,14 +1320,14 @@
             groupBox21.Controls.Add(radioButton21);
             groupBox21.Controls.Add(radioButton22);
             groupBox21.Dock = DockStyle.Top;
-            groupBox21.Location = new Point(4, 220);
+            groupBox21.Location = new Point(4, 112);
             groupBox21.Margin = new Padding(4);
             groupBox21.Name = "groupBox21";
             groupBox21.Padding = new Padding(4);
             groupBox21.Size = new Size(470, 108);
             groupBox21.TabIndex = 7;
             groupBox21.TabStop = false;
-            groupBox21.Text = "测声仪状态：";
+            groupBox21.Text = "测深仪状态：";
             // 
             // radioButton21
             // 
@@ -1362,44 +1353,6 @@
             radioButton22.Text = "测量状态";
             radioButton22.UseVisualStyleBackColor = true;
             // 
-            // groupBox20
-            // 
-            groupBox20.Controls.Add(radioButton19);
-            groupBox20.Controls.Add(radioButton20);
-            groupBox20.Dock = DockStyle.Top;
-            groupBox20.Location = new Point(4, 112);
-            groupBox20.Margin = new Padding(4);
-            groupBox20.Name = "groupBox20";
-            groupBox20.Padding = new Padding(4);
-            groupBox20.Size = new Size(470, 108);
-            groupBox20.TabIndex = 6;
-            groupBox20.TabStop = false;
-            groupBox20.Text = "右支架状态：";
-            // 
-            // radioButton19
-            // 
-            radioButton19.AutoSize = true;
-            radioButton19.Location = new Point(229, 53);
-            radioButton19.Margin = new Padding(4);
-            radioButton19.Name = "radioButton19";
-            radioButton19.Size = new Size(126, 34);
-            radioButton19.TabIndex = 4;
-            radioButton19.TabStop = true;
-            radioButton19.Text = "上升状态";
-            radioButton19.UseVisualStyleBackColor = true;
-            // 
-            // radioButton20
-            // 
-            radioButton20.AutoSize = true;
-            radioButton20.Location = new Point(7, 53);
-            radioButton20.Margin = new Padding(4);
-            radioButton20.Name = "radioButton20";
-            radioButton20.Size = new Size(126, 34);
-            radioButton20.TabIndex = 3;
-            radioButton20.TabStop = true;
-            radioButton20.Text = "下放状态";
-            radioButton20.UseVisualStyleBackColor = true;
-            // 
             // groupBox19
             // 
             groupBox19.Controls.Add(radioButton17);
@@ -1412,7 +1365,7 @@
             groupBox19.Size = new Size(470, 108);
             groupBox19.TabIndex = 5;
             groupBox19.TabStop = false;
-            groupBox19.Text = "左支架状态：";
+            groupBox19.Text = "支架状态：";
             // 
             // radioButton17
             // 
@@ -1443,22 +1396,21 @@
             tabPage8.AutoScroll = true;
             tabPage8.Controls.Add(groupBox17);
             tabPage8.Controls.Add(groupBox13);
-            tabPage8.Controls.Add(groupBox14);
             tabPage8.Controls.Add(groupBox15);
-            tabPage8.Location = new Point(4, 36);
+            tabPage8.Location = new Point(4, 42);
             tabPage8.Margin = new Padding(4);
             tabPage8.Name = "tabPage8";
             tabPage8.Padding = new Padding(4);
-            tabPage8.Size = new Size(478, 563);
+            tabPage8.Size = new Size(478, 557);
             tabPage8.TabIndex = 1;
-            tabPage8.Text = "水采机2";
+            tabPage8.Text = "设备2";
             tabPage8.UseVisualStyleBackColor = true;
             // 
             // groupBox17
             // 
             groupBox17.Controls.Add(tableLayoutPanel1);
             groupBox17.Dock = DockStyle.Top;
-            groupBox17.Location = new Point(4, 328);
+            groupBox17.Location = new Point(4, 220);
             groupBox17.Margin = new Padding(4);
             groupBox17.Name = "groupBox17";
             groupBox17.Padding = new Padding(4);
@@ -1550,14 +1502,14 @@
             groupBox13.Controls.Add(radioButton9);
             groupBox13.Controls.Add(radioButton10);
             groupBox13.Dock = DockStyle.Top;
-            groupBox13.Location = new Point(4, 220);
+            groupBox13.Location = new Point(4, 112);
             groupBox13.Margin = new Padding(4);
             groupBox13.Name = "groupBox13";
             groupBox13.Padding = new Padding(4);
             groupBox13.Size = new Size(470, 108);
             groupBox13.TabIndex = 3;
             groupBox13.TabStop = false;
-            groupBox13.Text = "测声仪状态：";
+            groupBox13.Text = "测深仪状态：";
             // 
             // radioButton9
             // 
@@ -1583,44 +1535,6 @@
             radioButton10.Text = "测量状态";
             radioButton10.UseVisualStyleBackColor = true;
             // 
-            // groupBox14
-            // 
-            groupBox14.Controls.Add(radioButton11);
-            groupBox14.Controls.Add(radioButton12);
-            groupBox14.Dock = DockStyle.Top;
-            groupBox14.Location = new Point(4, 112);
-            groupBox14.Margin = new Padding(4);
-            groupBox14.Name = "groupBox14";
-            groupBox14.Padding = new Padding(4);
-            groupBox14.Size = new Size(470, 108);
-            groupBox14.TabIndex = 2;
-            groupBox14.TabStop = false;
-            groupBox14.Text = "右支架状态：";
-            // 
-            // radioButton11
-            // 
-            radioButton11.AutoSize = true;
-            radioButton11.Location = new Point(229, 53);
-            radioButton11.Margin = new Padding(4);
-            radioButton11.Name = "radioButton11";
-            radioButton11.Size = new Size(126, 34);
-            radioButton11.TabIndex = 4;
-            radioButton11.TabStop = true;
-            radioButton11.Text = "上升状态";
-            radioButton11.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            radioButton12.AutoSize = true;
-            radioButton12.Location = new Point(7, 53);
-            radioButton12.Margin = new Padding(4);
-            radioButton12.Name = "radioButton12";
-            radioButton12.Size = new Size(126, 34);
-            radioButton12.TabIndex = 3;
-            radioButton12.TabStop = true;
-            radioButton12.Text = "下放状态";
-            radioButton12.UseVisualStyleBackColor = true;
-            // 
             // groupBox15
             // 
             groupBox15.Controls.Add(radioButton13);
@@ -1633,7 +1547,7 @@
             groupBox15.Size = new Size(470, 108);
             groupBox15.TabIndex = 1;
             groupBox15.TabStop = false;
-            groupBox15.Text = "左支架状态：";
+            groupBox15.Text = "支架状态：";
             // 
             // radioButton13
             // 
@@ -2001,8 +1915,6 @@
             tableLayoutPanel2.PerformLayout();
             groupBox21.ResumeLayout(false);
             groupBox21.PerformLayout();
-            groupBox20.ResumeLayout(false);
-            groupBox20.PerformLayout();
             groupBox19.ResumeLayout(false);
             groupBox19.PerformLayout();
             tabPage8.ResumeLayout(false);
@@ -2011,8 +1923,6 @@
             tableLayoutPanel1.PerformLayout();
             groupBox13.ResumeLayout(false);
             groupBox13.PerformLayout();
-            groupBox14.ResumeLayout(false);
-            groupBox14.PerformLayout();
             groupBox15.ResumeLayout(false);
             groupBox15.PerformLayout();
             groupBox18.ResumeLayout(false);
@@ -2075,9 +1985,6 @@
         private GroupBox groupBox13;
         private RadioButton radioButton9;
         private RadioButton radioButton10;
-        private GroupBox groupBox14;
-        private RadioButton radioButton11;
-        private RadioButton radioButton12;
         private GroupBox groupBox15;
         private RadioButton radioButton13;
         private RadioButton radioButton14;
@@ -2176,9 +2083,6 @@
         private GroupBox groupBox21;
         private RadioButton radioButton21;
         private RadioButton radioButton22;
-        private GroupBox groupBox20;
-        private RadioButton radioButton19;
-        private RadioButton radioButton20;
         private GroupBox groupBox19;
         private RadioButton radioButton17;
         private RadioButton radioButton18;
