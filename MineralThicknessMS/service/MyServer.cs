@@ -61,8 +61,13 @@ namespace MineralThicknessMS.service
         {
             TcpClient tcpClient = (TcpClient)sender;
             String str = e.Data.EncodeToString();
-            dataMapper.addData(msgDecode.msgSplit(str));
-            status.setStatus(msgDecode.msgSplit(str));
+            DataMsg dataMsg = new DataMsg();
+            dataMsg = msgDecode.msgSplit(str);
+            if(dataMsg.getMsgBegin() == "$GPGGA" && dataMsg.getMsgEnd() == "*5F")
+            {
+                dataMapper.addData(dataMsg);
+                status.setStatus(dataMsg);
+            }
         }
 
         //发送消息给服务端

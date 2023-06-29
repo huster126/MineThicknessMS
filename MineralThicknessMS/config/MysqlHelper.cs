@@ -11,7 +11,7 @@ namespace MineralThicknessMS.config
 {
     public class MySQLHelper
     {
-        public static string connStr = "Database=luojia;Data Source=localhost;User Id=root;Password=admin;pooling=false;CharSet=utf8;port=3306";
+        public static string connStr = "Database=luojiadata;Data Source=localhost;User Id=root;Password=root;pooling=false;CharSet=utf8;port=3306";
         public static bool ExecSql(string sqlStr, params MySqlParameter[] para)
         {
 
