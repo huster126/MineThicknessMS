@@ -20,9 +20,10 @@ namespace MineralThicknessMS
         private GMapOverlay overlay;//GMap图层
         private GMarkerGoogle preMarker;
 
+
         public MainForm()
         {
-            InitializeComponent(); 
+            InitializeComponent();
             myserver = new MyServer(txtPort.Text.ToString());
             instruction = new Instruction();
             msgDecode = new MsgDecode();
