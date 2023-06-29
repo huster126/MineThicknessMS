@@ -153,10 +153,8 @@ namespace MineralThicknessMS
             radioButton15.Checked = !(myserver.openFlag);
 
             //水采机2
-            radioButton14.Checked = Status.bracketL[1];
-            radioButton13.Checked = !(Status.bracketL[1]);
-            radioButton12.Checked = Status.bracketR[1];
-            radioButton11.Checked = !(Status.bracketR[1]);
+            radioButton14.Checked = Status.bracket[1];
+            radioButton13.Checked = !(Status.bracket[1]);
             radioButton10.Checked = Status.soundMachine[1];
             radioButton9.Checked = !(Status.soundMachine[1]);
             label5.Text = "经度：" + Status.longitude[1] + "E";
@@ -166,10 +164,8 @@ namespace MineralThicknessMS
             label11.Text = "GPS定位状态：" + Status.GPSState[1];
 
             //水采机1
-            radioButton18.Checked = Status.bracketL[0];
-            radioButton17.Checked = !(Status.bracketL[0]);
-            radioButton20.Checked = Status.bracketR[0];
-            radioButton19.Checked = !(Status.bracketR[0]);
+            radioButton18.Checked = Status.bracket[0];
+            radioButton17.Checked = !(Status.bracket[0]);
             radioButton22.Checked = Status.soundMachine[0];
             radioButton21.Checked = !(Status.soundMachine[0]);
             label15.Text = "经度：" + Status.longitude[0] + "E";
@@ -441,11 +437,8 @@ namespace MineralThicknessMS
         private void btnStatus_Click(object sender, EventArgs e)
         {
             string str1_1;
-            string str1_2;
             string str2_1;
             string str2_2;
-            string str3_1;
-            string str3_2;
             string str4_1;
             string str4_2;
             string str5_1;
@@ -463,20 +456,15 @@ namespace MineralThicknessMS
             else
                 str1_1 = "服务端状态：关闭";
 
-            if (Status.bracketL[0])
-                str2_1 = "左支架状态：展开状态";
+            if (Status.bracket[0])
+                str2_1 = "支架状态：展开状态";
             else
-                str2_1 = "左支架状态：折叠状态";
-
-            if (Status.bracketR[0])
-                str3_1 = "右支架状态：下放状态";
-            else
-                str3_1 = "右支架状态：上升状态";
+                str2_1 = "支架状态：折叠状态";
 
             if (Status.soundMachine[0])
-                str4_1 = "测声仪状态：测量状态";
+                str4_1 = "测深仪状态：测量状态";
             else
-                str4_1 = "测声仪状态：冲洗状态";
+                str4_1 = "测深仪状态：冲洗状态";
 
             str5_1 = "经度：" + Status.longitude[0].ToString() + "E";
             str6_1 = "纬度：" + Status.latitude[0].ToString() + "N";
@@ -484,24 +472,20 @@ namespace MineralThicknessMS
             str8_1 = "矿厚：" + Status.mineDepth[0].ToString() + "m";
             str9_1 = "GPS定位状态：" + Status.GPSState[0];
 
-            String str1 = str1_1 + "\r\n" + "设备1状态：" + "\r\n" + str2_1 + "\r\n" + str3_1 + "\r\n" + str4_1 + "\r\n" + str5_1 + "\r\n" + str6_1
+            String str1 = str1_1 + "\r\n" + "设备1状态：" + "\r\n" + str2_1 + "\r\n" + str4_1 + "\r\n" + str5_1 + "\r\n" + str6_1
                 + "\r\n" + str7_1 + "\r\n" + str8_1 + "\r\n" + str9_1;
 
 
-            if (Status.bracketL[1])
-                str2_2 = "左支架状态：展开状态";
+            if (Status.bracket[1])
+                str2_2 = "支架状态：展开状态";
             else
-                str2_2 = "左支架状态：折叠状态";
+                str2_2 = "支架状态：折叠状态";
 
-            if (Status.bracketR[1])
-                str3_2 = "右支架状态：下放状态";
-            else
-                str3_2 = "右支架状态：上升状态";
 
             if (Status.soundMachine[1])
-                str4_2 = "测声仪状态：测量状态";
+                str4_2 = "测深仪状态：测量状态";
             else
-                str4_2 = "测声仪状态：冲洗状态";
+                str4_2 = "测深仪状态：冲洗状态";
 
             str5_2 = "经度：" + Status.longitude[1].ToString() + "E";
             str6_2 = "纬度：" + Status.latitude[1].ToString() + "N";
@@ -509,7 +493,7 @@ namespace MineralThicknessMS
             str8_2 = "矿厚：" + Status.mineDepth[1].ToString() + "m";
             str9_2 = "GPS定位状态：" + Status.GPSState[1];
 
-            String str2 = "设备2状态：" + "\r\n" + str2_2 + "\r\n" + str3_2 + "\r\n" + str4_2 + "\r\n" + str5_2 + "\r\n" + str6_2
+            String str2 = "设备2状态：" + "\r\n" + str2_2 + "\r\n" + str4_2 + "\r\n" + str5_2 + "\r\n" + str6_2
                 + "\r\n" + str7_2 + "\r\n" + str8_2 + "\r\n" + str9_2;
             MessageBox.Show(str1 + "\r\n" + str2, "实时数据");
         }
