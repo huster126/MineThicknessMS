@@ -21,6 +21,8 @@ namespace MineralThicknessMS
         private GMarkerGoogle preMarker;
 
 
+
+
         public MainForm()
         {
             InitializeComponent();
