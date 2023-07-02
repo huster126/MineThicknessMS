@@ -21,7 +21,7 @@ namespace MineralThicknessMS.entity
 
         private double depth;       //深度
 
-        private double waterTemperature;//水温
+        private double waterTemperature; //水温
 
         private double high;     //大地高
 
