@@ -8,8 +8,13 @@ namespace MineralThicknessMS.entity
 {
     public class DataMsg
     {
+<<<<<<< HEAD
         private string msgBegin;//消息头校验
         private string msgEnd;//消息尾校验
+=======
+        private string msgBegin;
+        private string msgEnd;
+>>>>>>> main
 
         private int id;
         private DateTime dataTime;   //时间
@@ -38,6 +43,7 @@ namespace MineralThicknessMS.entity
         private int waterwayId; //航道号
         private int rectangleId;//网格编号
 
+<<<<<<< HEAD
         public void setMsgBegin(string msgBegin)
         {
             this.msgBegin = msgBegin;
@@ -45,12 +51,21 @@ namespace MineralThicknessMS.entity
 
         public void setMsgEnd(string msgEnd) {  this.msgEnd = msgEnd; }
 
+=======
+>>>>>>> main
         public string getMsgBegin()
         {
             return this.msgBegin;
         }
 
+<<<<<<< HEAD
         public string getMsgEnd() { return this.msgEnd; }
+=======
+        public void setMsgBegin(string msgBegin)
+        {
+            this.msgBegin = msgBegin;
+        }
+>>>>>>> main
 
         public void setMineHigh(double mineHigh)
         {
