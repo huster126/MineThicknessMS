@@ -55,7 +55,7 @@ namespace MineralThicknessMS
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //啦djakljdlksa
+            //啦
         }
         // GMap基础信息初始化
         public void GMapInit()
